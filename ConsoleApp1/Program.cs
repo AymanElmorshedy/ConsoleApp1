@@ -48,7 +48,24 @@ namespace ConsoleApp1
             #endregion
 
             #region Assignment
+            #region Part02
+            #region Q1
+            //Person[] person = new Person[3];
+            //person[0]=new Person("ali",22);
+            //person[1]=new Person("Ahmed",33);
+            //person[2]=new Person("Ayman",18);
 
+            //for (int i = 0; i < person.Length; i++)
+            //{
+            //    Console.Write(person[i].Name);
+            //    Console.WriteLine( person[i].Age);
+            //}
+
+            #endregion
+            #region Q2
+
+            #endregion
+            #endregion
             #endregion
         }
     }
