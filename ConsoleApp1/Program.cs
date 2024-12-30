@@ -63,6 +63,47 @@ namespace ConsoleApp1
 
             #endregion
             #region Q2
+            Person[] person = new Person[3];
+            int age1;
+            int age2;
+            int age3;
+            bool flag1;
+            bool flag2;
+            bool flag3;
+            Console.WriteLine("Entetr Name 1:");
+            string Name1=Console.ReadLine();
+            do
+            {
+                Console.WriteLine("please enter age1");
+                flag1 = int.TryParse(Console.ReadLine(), out age1);
+            }while( !flag1 || !(age1>=18 && age1<=60));
+
+            Console.WriteLine("Entetr Name 2:");
+            string Name2 = Console.ReadLine();
+            do
+            {
+                Console.WriteLine("please enter age2");
+                flag2 = int.TryParse(Console.ReadLine(), out age2);
+            } while (!flag2 || !(age2 >= 18 && age2 <= 60));
+
+            Console.WriteLine("Entetr Name 3:");
+            string Name3 = Console.ReadLine();
+            do
+            {
+                Console.WriteLine("please enter age3");
+                flag3 = int.TryParse(Console.ReadLine(), out age3);
+            } while (!flag1 || !(age3 >= 18 && age3 <= 60));
+            person[0] = new Person(Name1,age1);
+            person[1] = new Person(Name2,age2);
+            person[2] = new Person(Name3,age3);
+            int Oldest = Math.Max(person[0].Age,Math.Max( person[1].Age, person[2].Age));
+            for (int i = 0; i < person.Length; i++)
+            {
+                if (person[i].Age == Oldest)
+                {
+                    Console.WriteLine($"{person[i].Name} , {person[i].Age}");
+                }
+            }
 
             #endregion
             #endregion
